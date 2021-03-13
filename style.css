@@ -1,0 +1,169 @@
+body {
+  background-color: #ebebeb;
+  font-family: "Asap", sans-serif;
+  color: white;
+}
+/* Global view aka Desktop */
+/* h1 {
+    color: royalblue;
+  } */
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo span:first-of-type {
+  font-weight: 700;
+}
+
+.container {
+  max-width: 1024px;
+  min-height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 120px;
+}
+
+.header-container {
+  background-color: rgb(60, 60, 60);
+  min-height: 80px;
+  /* margin-bottom: 40px; */
+  position: fixed;
+  width: 100%;
+}
+
+header {
+  /* background-color: rgb(32, 136, 161); */
+  max-width: 1024px;
+  min-height: 80px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mybutton {
+  display: inline-block;
+  border: white solid;
+  border-width: 1px;
+  padding: 10px 25px;
+  margin-left: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px rgba(145, 139, 139, 0.228);
+}
+
+.mybutton:hover {
+  background-color: rgb(43, 226, 147);
+  transition-duration: 1s;
+}
+
+.col {
+  background-color: rgb(43, 226, 147);
+  width: 30%;
+  /* min-height: 200px; */
+  margin-bottom: 40px;
+}
+
+.col p {
+  font-size: 0.825rem;
+  line-height: 1.25rem;
+  padding: 20px 25px;
+}
+
+.col p::first-line {
+  font-weight: 700; /*for bold */
+}
+
+.hide-desktop {
+  display: none;
+}
+
+/* use of responsive image using 100% width mehtod */
+.col img {
+  width: 100%;
+  height: auto;
+}
+
+.mobile-wrapper {
+  display: none;
+}
+
+/* Tablet view */
+@media (max-width: 768px) {
+  .col {
+    width: 48%;
+  }
+
+  .hide-desktop {
+    display: block;
+  }
+  /* for mobile responsive menu */
+  header {
+    display: flex;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .logo {
+    padding: 40px 0;
+  }
+
+  .header-container {
+    position: relative;
+  }
+
+  .container {
+    padding-top: 40px;
+  }
+
+  .mobile-wrapper {
+    display: block;
+    padding-right: 30px;
+  }
+
+  .mobile-nav {
+    display: none;
+    position: absolute;
+    margin-left: -70px;
+    min-height: 60px;
+    min-width: 30px;
+    border: rgb(43, 226, 147) solid;
+    border-width: 1.5px;
+    box-sizing: border-box;
+  }
+
+  .navbutton {
+    display: block;
+    padding: 15px 30px;
+    text-align: center;
+
+    background-color: coral;
+    box-shadow: ;
+  }
+
+  .navbutton:hover {
+    background-color: rgb(43, 226, 147);
+    transition-duration: 1s;
+  }
+
+  .burger-menu {
+    padding-bottom: 10px;
+  }
+  /* mobile responsive menu ends here */
+}
+
+/* Mobile view*/
+@media (max-width: 400px) {
+  .col {
+    width: 100%;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+}
